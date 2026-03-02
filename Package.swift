@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "WhereUAt",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     dependencies: [
         // Firebase for real-time database and authentication
@@ -36,8 +36,7 @@ let package = Package(
                 "Models",
                 "ViewModels",
                 "Views",
-                "Services",
-                "Resources"
+                "Services"
             ]
         ),
         .testTarget(
