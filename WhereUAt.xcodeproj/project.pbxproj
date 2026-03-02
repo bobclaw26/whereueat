@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		00000001000000010000000A /* WhereUAtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000000B; };
+		00000001000000010000002E /* CoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000002F; };
+		000000010000000100000030 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000031; };
+		000000010000000100000032 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000033; };
+		000000010000000100000034 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000035; };
+		000000010000000100000036 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000037; };
+		000000010000000100000038 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000039; };
+		00000001000000010000003A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003B; };
+		00000001000000010000003C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003D; };
+		00000001000000010000003E /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003F; };
+		000000010000000100000040 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000041; };
+		000000010000000100000042 /* FriendsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000043; };
+		000000010000000100000044 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000045; };
+		000000010000000100000046 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000047; };
+		000000010000000100000048 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000049; };
+		00000001000000010000004A /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000004B; };
 		00000001000000010000000C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000000D; };
 		00000001000000010000000E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000000F; };
 		00000001000000010000001A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000001B; };
@@ -21,6 +36,21 @@
 
 /* Begin PBXFileReference section */
 		00000001000000010000000B /* WhereUAtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/WhereUAtApp.swift"; sourceTree = "<group>"; };
+		00000001000000010000002F /* CoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/CoreModels.swift"; sourceTree = "<group>"; };
+		000000010000000100000031 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/APIServices.swift"; sourceTree = "<group>"; };
+		000000010000000100000033 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/AuthManager.swift"; sourceTree = "<group>"; };
+		000000010000000100000035 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/NetworkService.swift"; sourceTree = "<group>"; };
+		000000010000000100000037 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/ChatViewModel.swift"; sourceTree = "<group>"; };
+		000000010000000100000039 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/FeedViewModel.swift"; sourceTree = "<group>"; };
+		00000001000000010000003B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/MapViewModel.swift"; sourceTree = "<group>"; };
+		00000001000000010000003D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/ProfileViewModel.swift"; sourceTree = "<group>"; };
+		00000001000000010000003F /* TicketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/TicketsViewModel.swift"; sourceTree = "<group>"; };
+		000000010000000100000041 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/ChatView.swift"; sourceTree = "<group>"; };
+		000000010000000100000043 /* FriendsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/FriendsFeedView.swift"; sourceTree = "<group>"; };
+		000000010000000100000045 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/LoginView.swift"; sourceTree = "<group>"; };
+		000000010000000100000047 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/MapView.swift"; sourceTree = "<group>"; };
+		000000010000000100000049 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/ProfileView.swift"; sourceTree = "<group>"; };
+		00000001000000010000004B /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/TicketsView.swift"; sourceTree = "<group>"; };
 		00000001000000040000001A /* WhereUAt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereUAt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00000001000000050000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00000001000000060000001A /* WhereUAt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhereUAt.entitlements; sourceTree = "<group>"; };
@@ -79,21 +109,44 @@
 		};
 		00000001000000040000001A /* Models */ = {
 			isa = PBXGroup;
+			children = (
+				00000001000000010000002F /* CoreModels.swift */,
+			);
 			path = Models;
 			sourceTree = "<group>";
 		};
 		00000001000000050000001A /* ViewModels */ = {
 			isa = PBXGroup;
+			children = (
+				000000010000000100000037 /* ChatViewModel.swift */,
+				000000010000000100000039 /* FeedViewModel.swift */,
+				00000001000000010000003B /* MapViewModel.swift */,
+				00000001000000010000003D /* ProfileViewModel.swift */,
+				00000001000000010000003F /* TicketsViewModel.swift */,
+			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		00000001000000060000001A /* Views */ = {
 			isa = PBXGroup;
+			children = (
+				000000010000000100000041 /* ChatView.swift */,
+				000000010000000100000043 /* FriendsFeedView.swift */,
+				000000010000000100000045 /* LoginView.swift */,
+				000000010000000100000047 /* MapView.swift */,
+				000000010000000100000049 /* ProfileView.swift */,
+				00000001000000010000004B /* TicketsView.swift */,
+			);
 			path = Views;
 			sourceTree = "<group>";
 		};
 		00000001000000070000001A /* Services */ = {
 			isa = PBXGroup;
+			children = (
+				000000010000000100000031 /* APIServices.swift */,
+				000000010000000100000033 /* AuthManager.swift */,
+				000000010000000100000035 /* NetworkService.swift */,
+			);
 			path = Services;
 			sourceTree = "<group>";
 		};
@@ -215,6 +268,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				00000001000000010000000A /* WhereUAtApp.swift in Sources */,
+				00000001000000010000002E /* CoreModels.swift in Sources */,
+				000000010000000100000030 /* APIServices.swift in Sources */,
+				000000010000000100000032 /* AuthManager.swift in Sources */,
+				000000010000000100000034 /* NetworkService.swift in Sources */,
+				000000010000000100000036 /* ChatViewModel.swift in Sources */,
+				000000010000000100000038 /* FeedViewModel.swift in Sources */,
+				00000001000000010000003A /* MapViewModel.swift in Sources */,
+				00000001000000010000003C /* ProfileViewModel.swift in Sources */,
+				00000001000000010000003E /* TicketsViewModel.swift in Sources */,
+				000000010000000100000040 /* ChatView.swift in Sources */,
+				000000010000000100000042 /* FriendsFeedView.swift in Sources */,
+				000000010000000100000044 /* LoginView.swift in Sources */,
+				000000010000000100000046 /* MapView.swift in Sources */,
+				000000010000000100000048 /* ProfileView.swift in Sources */,
+				00000001000000010000004A /* TicketsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
