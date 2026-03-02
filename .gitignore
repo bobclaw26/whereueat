@@ -2,6 +2,8 @@
 *.xcodeproj/xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcworkspace/xcuserdata/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
 DerivedData/
 .DS_Store
 xcuserdata/
@@ -10,11 +12,11 @@ xcuserdata/
 build/
 .build/
 *.swiftpm/
+*.xcarchive
 
 # CocoaPods
 Pods/
 Podfile.lock
-*.xcworkspace/
 
 # Carthage
 Carthage/Build/
