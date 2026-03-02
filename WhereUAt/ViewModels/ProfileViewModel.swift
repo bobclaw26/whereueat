@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, *)
 @MainActor
 class ProfileViewModel: ObservableObject {
     @Published var user: User?

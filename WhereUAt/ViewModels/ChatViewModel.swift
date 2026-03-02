@@ -1,6 +1,7 @@
 import SwiftUI
 import Combine
 
+@available(iOS 15.0, *)
 @MainActor
 class ChatViewModel: ObservableObject {
     @Published var conversations: [Conversation] = []

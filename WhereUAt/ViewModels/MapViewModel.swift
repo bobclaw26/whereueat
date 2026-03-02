@@ -2,6 +2,7 @@ import SwiftUI
 import MapKit
 import Combine
 
+@available(iOS 15.0, *)
 @MainActor
 class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var region = MKCoordinateRegion(
