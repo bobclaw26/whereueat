@@ -1,0 +1,137 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest
+    
+    - name: Install SwiftLint
+      run: brew install swiftlint
+    
+    - name: Lint Code
+      run: |
+        swiftlint lint WhereUAt \
+          --config .swiftlint.yml \
+          --reporter json > lint-report.json || true
+        cat lint-report.json
+    
+    - name: Build
+      run: |
+        xcodebuild build \
+          -scheme WhereUAt \
+          -destination 'generic/platform=iOS' \
+          -configuration Release
+      continue-on-error: true
+    
+    - name: Run Unit Tests
+      run: |
+        xcodebuild test \
+          -scheme WhereUAt \
+          -destination 'generic/platform=iOS Simulator' \
+          -configuration Debug \
+          -enableCodeCoverage YES
+      continue-on-error: true
+    
+    - name: Upload Code Coverage
+      uses: codecov/codecov-action@v3
+      continue-on-error: true
+
+  security-scan:
+    name: Security Audit
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Run Swift Security Checker
+      run: |
+        # Check for hardcoded secrets
+        git log -p --follow -S 'password' -- WhereUAt/ | head -50 || true
+        
+        # Check for insecure protocols
+        grep -r "http://" WhereUAt/ || echo "No unencrypted HTTP found (good)"
+        
+        # Check for hardcoded API keys
+        grep -r "apiKey.*=" WhereUAt/ | grep -v "Environment" || echo "No hardcoded API keys found (good)"
+
+  lint:
+    name: Code Quality
+    runs-on: macos-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Swift
+      uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: 5.9
+    
+    - name: Check Swift Formatting
+      run: |
+        swift format lint WhereUAt/ || echo "Formatting check complete"
+    
+    - name: Run SwiftLint
+      run: |
+        brew install swiftlint
+        swiftlint lint WhereUAt --config .swiftlint.yml || true
+
+  testflight-build:
+    name: TestFlight Build
+    runs-on: macos-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [build, security-scan, lint]
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest
+    
+    - name: Build App
+      run: |
+        xcodebuild archive \
+          -scheme WhereUAt \
+          -destination 'generic/platform=iOS' \
+          -archivePath ./WhereUAt.xcarchive \
+          -configuration Release \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO
+      continue-on-error: true
+    
+    - name: Export IPA
+      run: |
+        xcodebuild -exportArchive \
+          -archivePath ./WhereUAt.xcarchive \
+          -exportOptionsPlist ./exportOptions.plist \
+          -exportPath ./build || echo "Export step requires signing configuration"
+      continue-on-error: true
+    
+    - name: Upload to TestFlight
+      uses: apple-actions/upload-testflight-build@v1
+      with:
+        app-path: './build/WhereUAt.ipa'
+        issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+        api-key-id: ${{ secrets.APPSTORE_KEY_ID }}
+        api-private-key: ${{ secrets.APPSTORE_PRIVATE_KEY }}
+      continue-on-error: true

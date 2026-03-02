@@ -1,0 +1,104 @@
+# SwiftLint configuration for WhereUAt iOS App
+
+# Rules to enable
+enabled_rules:
+  - closing_brace
+  - colon
+  - comma
+  - control_statement
+  - cyclomatic_complexity
+  - empty_enum_arguments
+  - empty_parameters
+  - force_cast
+  - force_try
+  - function_body_length
+  - function_parameter_list_length
+  - identifier_name
+  - implicit_getter
+  - leading_whitespace
+  - legacy_constant
+  - legacy_constructor
+  - line_length
+  - missing_docs
+  - nesting
+  - notification_center_detachment
+  - opening_brace
+  - operator_whitespace
+  - operator_usage_whitespace
+  - optional_binding_v2
+  - private_outlet
+  - private_unit_test
+  - prohibited_super_call
+  - redundant_discardable_let
+  - redundant_objc_attribute
+  - redundant_optional_initialization
+  - redundant_string_enum_value
+  - return_arrow_whitespace
+  - statement_position
+  - syntactic_sugar
+  - todo
+  - trailing_comma
+  - trailing_newline
+  - trailing_semicolon
+  - trailing_whitespace
+  - type_body_length
+  - type_name
+  - unneeded_break_in_switch
+  - unneeded_parentheses_in_closure_argument
+  - valid_ibaction
+  - valid_iboutlet
+  - vertical_parameter_alignment
+  - vertical_whitespace
+  - void_return
+  - weak_delegate
+
+# Rules to disable
+disabled_rules:
+  - missing_docs
+  - unused_optional_binding
+  - no_grouping_extension
+  - file_length
+
+# Exceptions for specific rules
+line_length:
+  warning: 120
+  error: 150
+
+function_body_length:
+  warning: 60
+  error: 100
+
+type_body_length:
+  warning: 300
+  error: 400
+
+cyclomatic_complexity:
+  warning: 10
+  error: 15
+
+identifier_name:
+  min_length:
+    warning: 2
+  max_length:
+    warning: 50
+    error: 60
+  excluded:
+    - i
+    - j
+    - id
+    - x
+    - y
+    - z
+
+type_name:
+  min_length:
+    warning: 3
+  max_length:
+    warning: 40
+
+function_parameter_list_length:
+  warning: 5
+  error: 8
+
+# Reporter options
+reporter: "xcode"

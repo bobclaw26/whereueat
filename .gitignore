@@ -1,0 +1,59 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+.DS_Store
+xcuserdata/
+
+# Build
+build/
+.build/
+*.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace/
+
+# Carthage
+Carthage/Build/
+
+# SPM
+.swiftpm/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# API Keys
+GoogleService-Info.plist
+Secrets.swift
+
+# Testing
+*.profdata
+.coverage/
+coverage.xml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Dependencies
+Packages/
+.package.resolved
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.#*
