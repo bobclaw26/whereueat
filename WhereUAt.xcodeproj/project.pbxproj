@@ -3,232 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
-
-/* Begin PBXBuildFile section */
-		00000001000000010000000A /* WhereUAtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000000B; };
-		00000001000000010000002E /* CoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000002F; };
-		000000010000000100000030 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000031; };
-		000000010000000100000032 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000033; };
-		000000010000000100000034 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000035; };
-		000000010000000100000036 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000037; };
-		000000010000000100000038 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000039; };
-		00000001000000010000003A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003B; };
-		00000001000000010000003C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003D; };
-		00000001000000010000003E /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000003F; };
-		000000010000000100000040 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000041; };
-		000000010000000100000042 /* FriendsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000043; };
-		000000010000000100000044 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000045; };
-		000000010000000100000046 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000047; };
-		000000010000000100000048 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000010000000100000049; };
-		00000001000000010000004A /* TicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000001000000010000004B; };
-		00000001000000010000000C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000000D; };
-		00000001000000010000000E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000000F; };
-		00000001000000010000001A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000001B; };
-		00000001000000010000001C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000001D; };
-		00000001000000010000001E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000001F; };
-		00000001000000010000002A /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 00000001000000010000002B; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		00000001000000010000000B /* WhereUAtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/WhereUAtApp.swift"; sourceTree = "<group>"; };
-		00000001000000010000002F /* CoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/CoreModels.swift"; sourceTree = "<group>"; };
-		000000010000000100000031 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/APIServices.swift"; sourceTree = "<group>"; };
-		000000010000000100000033 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/AuthManager.swift"; sourceTree = "<group>"; };
-		000000010000000100000035 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/NetworkService.swift"; sourceTree = "<group>"; };
-		000000010000000100000037 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/ChatViewModel.swift"; sourceTree = "<group>"; };
-		000000010000000100000039 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/FeedViewModel.swift"; sourceTree = "<group>"; };
-		00000001000000010000003B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/MapViewModel.swift"; sourceTree = "<group>"; };
-		00000001000000010000003D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/ProfileViewModel.swift"; sourceTree = "<group>"; };
-		00000001000000010000003F /* TicketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/TicketsViewModel.swift"; sourceTree = "<group>"; };
-		000000010000000100000041 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/ChatView.swift"; sourceTree = "<group>"; };
-		000000010000000100000043 /* FriendsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/FriendsFeedView.swift"; sourceTree = "<group>"; };
-		000000010000000100000045 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/LoginView.swift"; sourceTree = "<group>"; };
-		000000010000000100000047 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/MapView.swift"; sourceTree = "<group>"; };
-		000000010000000100000049 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/ProfileView.swift"; sourceTree = "<group>"; };
-		00000001000000010000004B /* TicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/TicketsView.swift"; sourceTree = "<group>"; };
-		00000001000000040000001A /* WhereUAt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereUAt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00000001000000050000001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00000001000000060000001A /* WhereUAt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhereUAt.entitlements; sourceTree = "<group>"; };
-		00000001000000070000001A /* WhereUAtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereUAtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00000001000000080000001A /* WhereUAtIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereUAtIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		00000001000000010000000F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00000001000000010000000C /* Alamofire in Frameworks */,
-				00000001000000010000000E /* FirebaseDatabase in Frameworks */,
-				00000001000000010000001A /* FirebaseAuth in Frameworks */,
-				00000001000000010000001C /* FirebaseFirestore in Frameworks */,
-				00000001000000010000001E /* MapboxMaps in Frameworks */,
-				00000001000000010000002A /* AsyncAlgorithms in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		00000001000000010000000A /* WhereUAt */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000050000001A /* Info.plist */,
-				00000001000000060000001A /* WhereUAt.entitlements */,
-				00000001000000030000001A /* App */,
-				00000001000000040000001A /* Models */,
-				00000001000000050000001A /* ViewModels */,
-				00000001000000060000001A /* Views */,
-				00000001000000070000001A /* Services */,
-			);
-			path = WhereUAt;
-			sourceTree = "<group>";
-		};
-		00000001000000020000001A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000040000001A /* WhereUAt.app */,
-				00000001000000070000001A /* WhereUAtTests.xctest */,
-				00000001000000080000001A /* WhereUAtIntegrationTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		00000001000000030000001A /* App */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000010000000B /* WhereUAtApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		00000001000000040000001A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000010000002F /* CoreModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		00000001000000050000001A /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				000000010000000100000037 /* ChatViewModel.swift */,
-				000000010000000100000039 /* FeedViewModel.swift */,
-				00000001000000010000003B /* MapViewModel.swift */,
-				00000001000000010000003D /* ProfileViewModel.swift */,
-				00000001000000010000003F /* TicketsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		00000001000000060000001A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				000000010000000100000041 /* ChatView.swift */,
-				000000010000000100000043 /* FriendsFeedView.swift */,
-				000000010000000100000045 /* LoginView.swift */,
-				000000010000000100000047 /* MapView.swift */,
-				000000010000000100000049 /* ProfileView.swift */,
-				00000001000000010000004B /* TicketsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		00000001000000070000001A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				000000010000000100000031 /* APIServices.swift */,
-				000000010000000100000033 /* AuthManager.swift */,
-				000000010000000100000035 /* NetworkService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		00000001000000080000001A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000090000001A /* WhereUAtTests */,
-				000000010000000A0000001A /* WhereUAtIntegrationTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		00000001000000090000001A /* WhereUAtTests */ = {
-			isa = PBXGroup;
-			path = WhereUAtTests;
-			sourceTree = "<group>";
-		};
-		000000010000000A0000001A /* WhereUAtIntegrationTests */ = {
-			isa = PBXGroup;
-			path = WhereUAtIntegrationTests;
-			sourceTree = "<group>";
-		};
-		000000010000000B0000001A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		000000010000000C0000001A /* WhereUAt */ = {
-			isa = PBXGroup;
-			children = (
-				00000001000000010000000A /* WhereUAt */,
-				00000001000000020000001A /* Products */,
-				000000010000000B0000001A /* Frameworks */,
-				00000001000000080000001A /* Tests */,
-			);
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		00000001000000010000000D /* WhereUAt */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00000001000000010000002C /* Build configuration list for PBXNativeTarget "WhereUAt" */;
-			buildPhases = (
-				00000001000000010000000E /* Sources */,
-				00000001000000010000000F /* Frameworks */,
-				00000001000000010000001A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WhereUAt;
-			packageProductDependencies = (
-				00000001000000010000000D /* Alamofire */,
-				00000001000000010000000F /* FirebaseDatabase */,
-				00000001000000010000001B /* FirebaseAuth */,
-				00000001000000010000001D /* FirebaseFirestore */,
-				00000001000000010000001F /* MapboxMaps */,
-				00000001000000010000002B /* AsyncAlgorithms */,
-			);
-			productName = WhereUAt;
-			productReference = 00000001000000040000001A /* WhereUAt.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		00000001000000010000000A /* Project object */ = {
+		0A00000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					00000001000000010000000D = {
-						CreatedOnToolsVersion = 15.0;
+					0A00000000000002 = {
+						CreatedOnToolsVersion = 15.4;
+						DevelopmentTeam = "";
 					};
 				};
 			};
-			buildConfigurationList = 00000001000000010000001A /* Build configuration list for PBXProject "WhereUAt" */;
+			buildConfigurationList = 0A00000000000003 /* Build configuration list for PBXProject "WhereUAt" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,98 +25,272 @@
 				en,
 				Base,
 			);
-			mainGroup = 000000010000000C0000001A /* WhereUAt */;
-			packageReferences = (
-				00000001000000010000000D /* XCRemoteSwiftPackageReference "Alamofire" */,
-				00000001000000010000000E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				00000001000000010000001F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
-				00000001000000010000002A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
-			);
-			productRefGroup = 00000001000000020000001A /* Products */;
+			mainGroup = 0A00000000000004 /* WhereUAt */;
+			productRefGroup = 0A00000000000005 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00000001000000010000000D /* WhereUAt */,
+				0A00000000000002 /* WhereUAt */,
 			);
 		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		00000001000000010000001A /* Resources */ = {
+		0A00000000000003 /* Build configuration list for PBXProject "WhereUAt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A00000000000006 /* Debug */,
+				0A00000000000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A00000000000004 /* WhereUAt */ = {
+			isa = PBXGroup;
+			children = (
+				0A00000000000008 /* App */,
+				0A00000000000009 /* Models */,
+				0A0000000000000A /* Views */,
+				0A0000000000000B /* ViewModels */,
+				0A0000000000000C /* Services */,
+				0A0000000000000D /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		0A00000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A00000000000002 /* WhereUAt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A00000000000008 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000000000000E /* WhereUAtApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A00000000000009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000000000000F /* CoreModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A0000000000000A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A00000000000010 /* LoginView.swift */,
+				0A00000000000011 /* MapView.swift */,
+				0A00000000000012 /* FriendsFeedView.swift */,
+				0A00000000000013 /* ChatView.swift */,
+				0A00000000000014 /* ProfileView.swift */,
+				0A00000000000015 /* TicketsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A0000000000000B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A00000000000016 /* ProfileViewModel.swift */,
+				0A00000000000017 /* FeedViewModel.swift */,
+				0A00000000000018 /* MapViewModel.swift */,
+				0A00000000000019 /* ChatViewModel.swift */,
+				0A0000000000001A /* TicketsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0A0000000000000C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A0000000000001B /* APIServices.swift */,
+				0A0000000000001C /* NetworkService.swift */,
+				0A0000000000001D /* AuthManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A0000000000000D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0A0000000000000E /* WhereUAtApp.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "WhereUAtApp.swift";
+			sourceTree = "<group>";
+		};
+		0A0000000000000F /* CoreModels.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "CoreModels.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000010 /* LoginView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "LoginView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000011 /* MapView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "MapView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000012 /* FriendsFeedView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "FriendsFeedView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000013 /* ChatView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "ChatView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000014 /* ProfileView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "ProfileView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000015 /* TicketsView.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "TicketsView.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000016 /* ProfileViewModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "ProfileViewModel.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000017 /* FeedViewModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "FeedViewModel.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000018 /* MapViewModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "MapViewModel.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000019 /* ChatViewModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "ChatViewModel.swift";
+			sourceTree = "<group>";
+		};
+		0A0000000000001A /* TicketsViewModel.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "TicketsViewModel.swift";
+			sourceTree = "<group>";
+		};
+		0A0000000000001B /* APIServices.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "APIServices.swift";
+			sourceTree = "<group>";
+		};
+		0A0000000000001C /* NetworkService.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "NetworkService.swift";
+			sourceTree = "<group>";
+		};
+		0A0000000000001D /* AuthManager.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "AuthManager.swift";
+			sourceTree = "<group>";
+		};
+		0A00000000000002 /* WhereUAt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0000000000001E /* Build configuration list for PBXNativeTarget "WhereUAt" */;
+			buildPhases = (
+				0A0000000000001F /* Sources */,
+				0A00000000000020 /* Frameworks */,
+				0A00000000000021 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhereUAt;
+			productName = WhereUAt;
+			productReference = 0A00000000000002 /* WhereUAt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A0000000000001E /* Build configuration list for PBXNativeTarget "WhereUAt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A00000000000022 /* Debug */,
+				0A00000000000023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0000000000001F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A00000000000024 /* WhereUAtApp.swift in Sources */,
+				0A00000000000025 /* CoreModels.swift in Sources */,
+				0A00000000000026 /* LoginView.swift in Sources */,
+				0A00000000000027 /* MapView.swift in Sources */,
+				0A00000000000028 /* FriendsFeedView.swift in Sources */,
+				0A00000000000029 /* ChatView.swift in Sources */,
+				0A0000000000002A /* ProfileView.swift in Sources */,
+				0A0000000000002B /* TicketsView.swift in Sources */,
+				0A0000000000002C /* ProfileViewModel.swift in Sources */,
+				0A0000000000002D /* FeedViewModel.swift in Sources */,
+				0A0000000000002E /* MapViewModel.swift in Sources */,
+				0A0000000000002F /* ChatViewModel.swift in Sources */,
+				0A00000000000030 /* TicketsViewModel.swift in Sources */,
+				0A00000000000031 /* APIServices.swift in Sources */,
+				0A00000000000032 /* NetworkService.swift in Sources */,
+				0A00000000000033 /* AuthManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A00000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A00000000000021 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		00000001000000010000000E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00000001000000010000000A /* WhereUAtApp.swift in Sources */,
-				00000001000000010000002E /* CoreModels.swift in Sources */,
-				000000010000000100000030 /* APIServices.swift in Sources */,
-				000000010000000100000032 /* AuthManager.swift in Sources */,
-				000000010000000100000034 /* NetworkService.swift in Sources */,
-				000000010000000100000036 /* ChatViewModel.swift in Sources */,
-				000000010000000100000038 /* FeedViewModel.swift in Sources */,
-				00000001000000010000003A /* MapViewModel.swift in Sources */,
-				00000001000000010000003C /* ProfileViewModel.swift in Sources */,
-				00000001000000010000003E /* TicketsViewModel.swift in Sources */,
-				000000010000000100000040 /* ChatView.swift in Sources */,
-				000000010000000100000042 /* FriendsFeedView.swift in Sources */,
-				000000010000000100000044 /* LoginView.swift in Sources */,
-				000000010000000100000046 /* MapView.swift in Sources */,
-				000000010000000100000048 /* ProfileView.swift in Sources */,
-				00000001000000010000004A /* TicketsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		00000001000000010000001A /* Debug */ = {
+		0A00000000000022 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_DIALECT = "c++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_LEVEL = c99;
+				GCC_C_LANGUAGE_DIALECT = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -348,51 +311,25 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		00000001000000010000001B /* Release */ = {
+		0A00000000000023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_DIALECT = "c++17";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_LEVEL = c99;
+				GCC_C_LANGUAGE_DIALECT = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -405,145 +342,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		00000001000000010000002C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WhereUAt/WhereUAt.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = WhereUAt/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WhereUAt;
-				INFOPLIST_KEY_LSApplicationQueriesSchemes = (
-					"fbapi",
-					"fb-messenger-api",
-					"fbauth2",
-					"fbshare",
-				);
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access for video calls with your friends.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show you on the map and help your friends find you.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you on the map and help your friends find you.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access for audio calls with your friends.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whereueat.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		00000001000000010000002D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WhereUAt/WhereUAt.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = WhereUAt/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WhereUAt;
-				INFOPLIST_KEY_LSApplicationQueriesSchemes = (
-					"fbapi",
-					"fb-messenger-api",
-					"fbauth2",
-					"fbshare",
-				);
-				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access for video calls with your friends.";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show you on the map and help your friends find you.";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you on the map and help your friends find you.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need microphone access for audio calls with your friends.";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.whereueat.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		00000001000000010000001A /* Build configuration list for PBXProject "WhereUAt" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00000001000000010000001A /* Debug */,
-				00000001000000010000001B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		00000001000000010000002C /* Build configuration list for PBXNativeTarget "WhereUAt" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00000001000000010000002C /* Debug */,
-				00000001000000010000002D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		00000001000000010000000D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.0;
-			};
-		};
-		00000001000000010000000E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
-			};
-		};
-		00000001000000010000001F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
-			};
-		};
-		00000001000000010000002A /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 	};
-	rootObject = 00000001000000010000000A /* Project object */;
+	rootObject = 0A00000000000001 /* Project object */;
 }
