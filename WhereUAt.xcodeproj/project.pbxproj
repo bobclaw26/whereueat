@@ -109,6 +109,7 @@
 				0A0000000000001B /* APIServices.swift */,
 				0A0000000000001C /* NetworkService.swift */,
 				0A0000000000001D /* AuthManager.swift */,
+				0A00000000000035 /* LocationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,6 +217,12 @@
 			path = "AuthManager.swift";
 			sourceTree = "<group>";
 		};
+		0A00000000000035 /* LocationManager.swift */ = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "LocationManager.swift";
+			sourceTree = "<group>";
+		};
 		0A00000000000002 /* WhereUAt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A0000000000001E /* Build configuration list for PBXNativeTarget "WhereUAt" */;
@@ -262,6 +269,7 @@
 				0A00000000000031 /* APIServices.swift in Sources */,
 				0A00000000000032 /* NetworkService.swift in Sources */,
 				0A00000000000033 /* AuthManager.swift in Sources */,
+				0A00000000000036 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
