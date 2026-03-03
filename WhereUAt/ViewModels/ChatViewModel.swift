@@ -82,7 +82,7 @@ class ChatViewModel: ObservableObject {
 }
 
 // MARK: - Supporting Models
-struct Conversation: Identifiable {
+struct Conversation: Identifiable, Codable {
     let id: UUID
     let otherUserId: UUID
     let otherUserName: String
