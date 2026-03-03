@@ -14,7 +14,7 @@ struct LoginView: View {
             ZStack {
                 LinearGradient(
                     gradient: Gradient(colors: [.blue.opacity(0.1), .purple.opacity(0.1)]),
-                    startPoint: .topLeadingLeading,
+                    startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
                 .ignoresSafeArea()
